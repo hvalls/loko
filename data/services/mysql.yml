@@ -1,4 +1,4 @@
-db: 
+mysql: 
   image: mysql
   ports: 
     - 3306:3306

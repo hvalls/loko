@@ -1,0 +1,9 @@
+elasticsearch:
+  image: docker.elastic.co/elasticsearch/elasticsearch
+  ports:
+    - 9200:9200
+  environment:
+    - node.name=elasticsearch
+    - discovery.type=single-node
+  volumes:
+    - ./es_data:/usr/share/elasticsearch/data
