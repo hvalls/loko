@@ -8,7 +8,7 @@ import (
 
 var initCmd = &cobra.Command{
 	Use:   "init",
-	Short: "Execute request",
+	Short: "Initialize docker-compose.yml",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		content := []byte("services: \n")

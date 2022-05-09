@@ -12,7 +12,7 @@ import (
 
 var startCmd = &cobra.Command{
 	Use:   "add",
-	Short: "Add service",
+	Short: "Add service to docker-compose.yml",
 	Args: func(cmd *cobra.Command, args []string) error {
 		if len(args) < 1 {
 			return errors.New("service name is required")
