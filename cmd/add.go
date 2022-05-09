@@ -37,6 +37,6 @@ var startCmd = &cobra.Command{
 			check(err)
 		}
 
-		fmt.Println(fmt.Sprintf("service %s added successfully.", name))
+		fmt.Printf("service %s added successfully.\n", name)
 	},
 }
