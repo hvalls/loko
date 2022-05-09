@@ -1,0 +1,8 @@
+mariadb:
+  image: mariadb
+  ports:
+    - 3306:3306
+  environment:
+    - MARIADB_ROOT_PASSWORD=1234
+  volumes:
+    - mariadb_data:/var/lib/mysql
